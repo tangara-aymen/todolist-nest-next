@@ -15,6 +15,22 @@ Todo list application (todoapp-aymen) built with **Next.js** (frontend), **NestJ
 
 ## Setup
 
+### Quick start from root (after one-time setup below)
+
+From the project root, install dependencies once in each folder, then use root scripts:
+
+```bash
+# One-time: install root + backend + frontend deps
+npm install
+npm install --prefix backend
+npm install --prefix frontend
+```
+
+Then from root:
+
+- **Development:** `npm run dev` — backend on :4000, frontend on :3000
+- **Production build:** `npm run build` then `npm run start`
+
 ### 1. MySQL database
 
 Create a database:
@@ -70,5 +86,18 @@ App runs at **http://localhost:3000**.
 
 ## Scripts
 
-- **Backend:** `npm run start:dev` (watch mode), `npm run build`, `npm run start:prod`
-- **Frontend:** `npm run dev`, `npm run build`, `npm run start`
+From the **project root** (`todoapp-aymen/`):
+
+| Command | Description |
+|---------|-------------|
+| `npm run build` | Build backend and frontend |
+| `npm run build:backend` | Build backend only |
+| `npm run build:frontend` | Build frontend only |
+| `npm run start` | Start backend (prod) and frontend (prod) together |
+| `npm run start:backend` | Start backend in production mode |
+| `npm run start:frontend` | Start frontend in production mode |
+| `npm run dev` | Run backend (watch) and frontend (dev) together |
+| `npm run dev:backend` | Backend in watch mode |
+| `npm run dev:frontend` | Frontend in dev mode |
+
+From **backend/** or **frontend/** you can still use their own scripts (e.g. `npm run start:dev`, `npm run dev`).
