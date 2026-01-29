@@ -1,0 +1,21 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Env (keep .env.example)
+.env
+.env.local
+.env.*.local
+
+# Build / cache
+.next/
+out/
+dist/
+coverage/
+*.tsbuildinfo
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+*.log
