@@ -18,7 +18,7 @@ jobs:
             set -e
 
             cd /var/www/todolist-nest-next
-
+            git config --global --add safe.directory /var/www/todolist-nest-next
             git fetch origin
             git reset --hard origin/main
             git clean -fd
