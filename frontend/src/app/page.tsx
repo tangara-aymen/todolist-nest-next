@@ -73,7 +73,7 @@ export default function Home() {
             Todo List
           </h1>
           <p className="mt-2 text-slate-500 dark:text-slate-400">
-            todoapp-aymen · Next.js + NestJS + MySQL
+            todoapp-aymen · Next.js + NestJS + MySQL ✅
           </p>
         </header>
 
