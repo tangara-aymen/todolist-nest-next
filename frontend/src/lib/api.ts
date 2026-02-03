@@ -26,9 +26,9 @@ export const todoApi = {
   getAll: () => request<Todo[]>('/todos'),
   getOne: (id: number) => request<Todo>(`/todos/${id}`),
   create: (data: CreateTodoInput) =>
-    request<Todo>('/todos', { method: 'POST', body: data }),
+    request<Todo>('/todos', { method: 'POST', body: JSON.stringify(data) }),
   update: (id: number, data: UpdateTodoInput) =>
-    request<Todo>(`/todos/${id}`, { method: 'PATCH', body: data }),
+    request<Todo>(`/todos/${id}`, { method: 'PATCH', body: JSON.stringify(data) }),
   delete: (id: number) =>
     request<void>(`/todos/${id}`, { method: 'DELETE' }),
 };
